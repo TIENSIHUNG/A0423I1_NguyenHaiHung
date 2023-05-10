@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>e1_simForm</title>
+</head>
+<body>
+<style>
+    h2{
+        width: 560px;
+        height: 50px;
+        background-color: red;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .content{
+        padding: 50px;
+        padding-top: 1px;
+    }
+    .form{
+        border: 2px solid;
+        width: 560px;
+
+
+    }
+</style>
+
+<div class="form">
+    <form action="">
+        <h2>SỞ THÍCH CỦA BẠN</h2>
+        <div class="content">
+            <table>
+                <tr>
+                    <td>Họ và tên:</td>
+                    <td><input type="text" name="yourname"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+            </table>
+            <table >
+                <p>Sở thích</p>
+                <tr>
+
+                    <td><input type="checkbox" name="hobby">Thể thao</td>
+                    <td><input type="checkbox" name="hobby">Âm nhạc</td>
+                    <td><input type="checkbox" name="hobby">Đọc sách</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="hobby">Lướt Web</td>
+                    <td><input type="checkbox" name="hobby">Chơi game</td>
+                    <td><input type="checkbox" name="hobby">Điện ảnh</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="hobby">Du Lich</td>
+                </tr>
+
+            </table>
+            <input type="submit" value="Gửi thông tin">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+
+</div>
+</body>
+</html>
