@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<h2>Calculator</h2>
+<div>
+    <table>
+        <tr>
+            <td><input type="text" name="" id="numa"></td>
+            <td><input type="text" name="" id="numb"></td>
+        </tr>
+    </table>
+</div>
+<div>
+    <table>
+        <tr>
+            <td><button onclick="cong()">Addition(+)</button></td>
+            <td><button onclick="tru()">Subtraction(-)</button></td>
+            <td><button onclick="nhan()" >Multiplication(*)</button></td>
+            <td><button onclick="chia()" >Division(/)</button></td>
+        </tr>
+    </table>
+</div>
+<p id="kq" style="color: blue;"></p>
+<script !src="">
+
+    function cong() {
+        let a = document.getElementById("numa").value;
+        let b = document.getElementById("numb").value;
+        let Result;
+        Result = Number(a) + Number(b);
+        document.getElementById("kq").innerHTML="Result=:"+Result;
+    }
+    function tru() {
+        let a = document.getElementById("numa").value;
+        let b = document.getElementById("numb").value;
+        let Result;
+        Result = Number(a)-Number(b);
+        document.getElementById("kq").innerHTML="Result=:"+Result;
+    }
+    function nhan() {
+        let a = document.getElementById("numa").value;
+        let b = document.getElementById("numb").value;
+        let Result;
+        Result = Number(a) * Number(b);
+        document.getElementById("kq").innerHTML="Result=:"+Result;
+
+    }
+    function chia() {
+        let a = document.getElementById("numa").value;
+        let b = document.getElementById("numb").value;
+        let Result;
+        Result = Number(a) / Number(b);
+        document.getElementById("kq").innerHTML="Result=:"+Result;
+
+    }
+
+
+</script>
+</body>
+</html>
