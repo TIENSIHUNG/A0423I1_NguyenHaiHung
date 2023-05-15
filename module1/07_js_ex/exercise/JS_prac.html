@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<form action="JS_prac.html" method="get">-->
+    <table>
+        <tr>
+            <td>Amount</td>
+            <td></td>
+            <td>From Currency</td>
+            <td></td>
+            <td>To Currency</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="" id="num">
+            </td>
+            <td></td>
+            <td>
+                <select name="curren" id="curren">
+                    <option value="vn">Viet Nam</option>
+                    <option value="us">USD</option>
+                </select>
+            </td>
+            <td></td>
+            <td>
+                <select name="curren1" id="curren1">
+                    <option value="us">USD</option>
+                    <option value="vn">Viet Nam</option>
+                </select>
+            </td>
+            <td>
+                <button onclick="showresult()">Convert</button></td>
+        </tr>
+    </table>
+
+<!--</form>-->
+<p id="kq" style="color: blue;"></p>
+<script !src="">
+    function showresult() {
+       let Amount = document.getElementById("num").value;
+       let x = document.getElementById("curren").value;
+       let y = document.getElementById("curren1").value;
+       let result;
+       if (x == y){
+           result = Amount;
+       }
+       else if (x=="vn" && y=="us"){
+           result = Amount/23000;
+       }
+       else{
+           result = Amount*23000;
+       }
+
+        document.getElementById("kq").innerText="Result:"+result;
+    }
+
+</script>
+</body>
+</html>
