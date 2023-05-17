@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thang trong nam </title>
+</head>
+<body>
+
+    <input type="text" name="" id="month">
+    <button onclick="tinh()"> tinh so ngay </button>
+
+<p id="kq" style="background: red">Ket qua</p>
+<script>
+    function tinh() {
+        let thang = Number(document.getElementById("month").value);
+
+        console.log(thang)
+        switch (thang) {
+            case 1:
+                case 3:
+                    case 5:
+                        case 7:
+                            case 9:
+                                case 11:
+                                    document.getElementById("kq").innerText="Thang co 31 ngay";
+                                    break;
+            case 2 :
+                document.getElementById("kq").innerText="Thang co 28 hoac 29 ngay";
+                break;
+            case 4:
+                case 6:
+                    case 9 :
+                        case 11:
+                            document.getElementById("kq").innerText="Thang co 30 ngay";
+                            break;
+        }
+    }
+</script>
+</body>
+</html>
