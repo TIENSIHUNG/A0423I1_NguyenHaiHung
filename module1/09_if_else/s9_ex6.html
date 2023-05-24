@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    function giai(a, b) {
+        if (a === 0) {
+            if (b === 0) {
+                return "Phương trình vô số nghiệm";
+            } else {
+                return "Phương trình vô nghiệm";
+            }
+        } else {
+            return "Nghiệm của phương trình là: x = " + (-b / a);
+        }
+    }
+    var a = prompt("Nhap vao a");
+    var b = prompt("Nhap vao b");
+    var dapan = giai(a,b);
+    alert("" +dapan)
+
+</script>
+
+</body>
+</html>

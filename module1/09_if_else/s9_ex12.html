@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>T1</td>
+        <td id="t1"></td>
+    </tr>
+    <tr>
+        <td>T2</td>
+        <td id="t2"></td>
+    </tr>
+    <tr>
+        <td>T3</td>
+        <td id="t3"></td>
+    </tr>
+    <tr>
+        <td>T4</td>
+        <td id="t4"></td>
+    </tr>
+</table>
+<script>
+    alert("O day chi cho vay thoi han 4 thang");
+    alert("bac 20");
+    var x = parseInt(prompt("nhap so tien muon vay"));
+    var lai;
+    var rate = 0.2;
+    var x2,x3,x4,x5;
+    function tinh1() {
+        lai = x * 0.2;
+        x2 = x + lai;
+        document.getElementById("t1").innerText = "" +x2;
+    }
+    function tinh2() {
+        lai = x2 * 0.2;
+        x3 = x2 + lai;
+        document.getElementById("t2").innerText = "" +x3;
+    }
+    function tinh3() {
+        lai = x3 * 0.2;
+        x4 = x3 + lai;
+        document.getElementById("t3").innerText = "" +x4;
+    }
+    function tinh4() {
+        lai = x4 * 0.2;
+        x5 = x4 + lai;
+        document.getElementById("t4").innerText = "" +x5;
+    }
+    tinh1();
+    tinh2();
+    tinh3();
+    tinh4();
+
+
+</script>
+</body>
+</html>

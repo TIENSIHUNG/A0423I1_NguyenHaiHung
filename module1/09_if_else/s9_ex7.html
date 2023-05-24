@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p style="background: red" id="kq"></p>
+<script !src="">
+    function giai() {
+        if (delta<0){
+            alert("PT vo nghiem");
+        }else if(delta==0){
+            alert("PT co nghiem kep x1=x2= " + -b/(2*a));
+
+        }else {
+            alert("PT co 2 nghiem ");
+            var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            return "Phương trình có hai nghiệm phân biệt: x1 = " + x1 + ", x2 = " + x2;
+        }
+    }
+    var a = parseInt(prompt("nhap a "));
+    var b = parseInt(prompt("nhap b "));
+    var c = parseInt(prompt("nhap c "));
+    var delta = b*b - 4*a*c;
+    document.getElementById("kq").innerText = giai(a,b,c);
+
+
+</script>
+</body>
+</html>
