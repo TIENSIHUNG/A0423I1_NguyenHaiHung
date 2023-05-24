@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p style="background: aqua" id="kq"></p>
+<script !src="">
+    let x = prompt("Nhap vao so tien thang nay")
+    let disc;
+    let inc ;
+    if (x<10000000) {
+        alert("Thang nay free");
+        document.getElementById("kq").innerText = "Thue thang nay =0";
+    }else if (x<50000000){
+        alert("Thang nay mat 10% nha");
+        disc = "10%";
+        inc = inc = x*0.1;
+        document.getElementById("kq").innerText="Thue thang nay=" +inc;
+    }
+    else{
+        disc = "20%";
+        inc = x*0.2;
+        alert("thang nay mat 20% thue");
+        document.getElementById("kq").innerText="Thue thang nay=" +inc;
+
+    }
+</script>
+</body>
+</html>
