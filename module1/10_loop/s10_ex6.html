@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var tong=0;
+    var n=0;
+
+
+    for (let i = 0; i < 100000; i++) {
+        if(i % 7 == 0){
+            n++;
+            tong += i;
+        }
+
+        if(n >29){
+            break;
+        }
+    }
+    alert("n =" +n);
+    alert(
+        "tong 30 so dau tien chia het cho 7 ="+tong
+    );
+</script>
+</body>
+</html>

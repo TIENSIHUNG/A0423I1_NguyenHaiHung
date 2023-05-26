@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="top: auto" align="center">
+    <button type="reset">reset</button>
+    <button onclick="choi()">Choi</button>
+</div>
+<script >
+    function choi() {
+        var a = Number(prompt("Nhap vao khoang ma ban muon doan"));
+        switch (a) {
+            case 1:
+                var x = prompt("Nhap vao so cua ban");
+                while (x>0&&x<=10){
+                    let y= Math.floor(Math.random() * 10) + 1;
+                    if (x == y){
+                        alert("Ban da doan dung");
+                        break;
+                    }else{
+                        alert("Sai");
+                        alert("so do la: "+y);
+                        let x = prompt("Nhap lai x ");
+                    }
+                }
+                alert("chi duoc nhap tu 0-10");
+                case 2:
+                    var x = prompt("Nhap vao so cua ban");
+                    while (x>10&&x<=50){
+                        let y = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
+                        if (x == y){
+                            alert("Ban da doan dung");
+                            break;
+                        }else{
+                            alert("Sai");
+                            alert("so do la: "+y);
+                            let x = prompt("Nhap lai x ");
+                        }
+                    }
+                    alert("chi duoc nhap tu 10-50");
+                case 3:
+                var x = prompt("Nhap vao so cua ban");
+                while (x>50&&x<=100){
+                    let y = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
+                    if (x == y){
+                        alert("Ban da doan dung");
+                        break;
+                    }else{
+                        alert("Sai");
+                        alert("so do la: "+y);
+                        let x = prompt("Nhap lai x ");
+                    }
+                }
+                alert("chi duoc nhap tu 50-100");
+        }
+    }
+</script>
+</body>
+</html>

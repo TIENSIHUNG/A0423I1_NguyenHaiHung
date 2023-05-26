@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bảng cửu chương</title>
+    <style>
+        /* CSS để tạo đường viền cho bảng */
+        table {
+            border-collapse: collapse; /* Gộp các đường viền */
+        }
+
+        th, td {
+            border: 1px solid black; /* Đường viền 1px đen */
+            padding: 8px; /* Khoảng cách giữa nội dung và đường viền */
+        }
+    </style>
+</head>
+
+<body>
+<table id="bang-cuu-chuong"></table>
+
+<script>
+    // Hàm để sinh và ghi bảng cửu chương vào bảng HTML
+    function sinhVaGhiBangCuuChuong() {
+        var table = document.getElementById("bang-cuu-chuong");
+
+        for (var i = 1; i <= 9; i++) {
+            var row = document.createElement("tr");
+
+            for (var j = 1; j <= 10; j++) {
+                var cell = document.createElement("td");
+                cell.textContent = i + " x " + j + " = " + (i * j);
+                row.appendChild(cell);
+            }
+
+            table.appendChild(row);
+        }
+    }
+
+    // Gọi hàm để sinh và ghi bảng cửu chương
+    sinhVaGhiBangCuuChuong();
+</script>
+</body>
+</html>
