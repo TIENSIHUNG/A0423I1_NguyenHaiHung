@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    var y = 8;
+    var x = 25;
+    for (var i = 0; i < y; i++) {
+        var row = "";
+        for (var j = 0; j < x; j++) {
+            if (i === 0 || i === y - 1 || j === 0 || j === x - 1) {
+                row += '* ';
+            } else {
+                row += '  ';
+            }
+        }
+        console.log(row);
+    }
+
+</script>
+</body>
+</html>

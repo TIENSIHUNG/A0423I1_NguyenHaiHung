@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    var size = 5;
+    for (var i = 0; i < size; i++) {
+        var row = "";
+        for (var j = 0; j <= i; j++) {
+            row += "*";
+        }
+        console.log(row);
+    }
+
+    var size = 5;
+    for (var i = size; i > 0; i--) {
+        var row = "";
+        for (var j = 0; j < i; j++) {
+            row += "*";
+        }
+        console.log(row);
+    }
+    var size = 5;
+
+    // Vòng lặp để vẽ từng dòng của tam giác
+    for (var i = 0; i < size; i++) {
+        var row = "";
+
+        // Vòng lặp để tạo khoảng trắng trước các ký tự '*'
+        for (var j = 0; j < size - i - 1; j++) {
+            row += " ";
+        }
+
+        // Vòng lặp để vẽ các ký tự '*'
+        for (var k = 0; k <= i; k++) {
+            row += "*";
+        }
+
+        console.log(row);
+    }
+    var size = 4;
+
+    // Vòng lặp để vẽ từng dòng của tam giác
+    for (var i = size; i > -1; i--) {
+        var row = "";
+
+        // Vòng lặp để tạo khoảng trắng trước các ký tự '*'
+        for (var j = 0; j < size - i ; j++) {
+            row += " ";
+        }
+
+        // Vòng lặp để vẽ các ký tự '*'
+        for (var k = 0; k <= i; k++) {
+            row += "*";
+        }
+
+        console.log(row);
+    }
+
+</script>
+</body>
+</html>
