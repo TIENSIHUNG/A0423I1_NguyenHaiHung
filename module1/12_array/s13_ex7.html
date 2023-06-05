@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    let a = [12,23,34,54,65,57,3,5,7,15];
+    let x = prompt("Nhap so");
+    for (let i = 0; i < a.length ; i++) {
+        if (x == a[i]){
+            for (let j = i; j < a.length ; j++) {
+                a[j] = a[j+1];
+            }
+        }
+    }a[9]=0;
+    console.log(a);
+</script>
+</body>
+</html>

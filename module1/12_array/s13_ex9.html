@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    var a = [];
+    var b = [];
+    var c = [];
+    a.length = 10;
+    b.length =10;
+    c.length = 20;
+    for (let i = 0; i <a.length ; i++) {
+        a[i] = Math.floor(Math.random() * 100);
+        b[i] = Math.floor(Math.random() * 100);
+    }
+    console.log(a);
+    console.log(b);
+    c = (b.concat(a));
+    console.log(c);
+
+</script>
+</body>
+</html>
