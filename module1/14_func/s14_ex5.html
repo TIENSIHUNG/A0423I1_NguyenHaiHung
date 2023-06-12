@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="lok(x)">
+<script !src="">
+    let x = prompt("Nhap vao ten ngoi sao");
+    let a = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let b = ["Ursa Minor","Taurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+    function lok(x) {
+        for (let i = 0; i < a.length; i++) {
+            if (x==a[i]){
+                alert(b[i]);
+                return;
+            }
+        }
+        alert("ko thay");
+    }
+</script>
+
+</body>
+</html>
