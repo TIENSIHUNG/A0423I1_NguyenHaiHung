@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="DemoCanvas" width="2000" height="2000"></canvas>
+<script !src="">
+    class Rectangle {
+        constructor(height, width) {
+            this.height = height;
+            this.width = width;
+        }
+        getArea() {
+            return this.height * this.width;
+        }
+        getParameter(){
+            return this.width*2 + this.height *2;
+        }
+    }
+    let y = prompt("height");
+    let x = prompt("width");
+    let rec = new Rectangle(x,y);
+    let area = rec.getArea();
+    let parameter = rec.getParameter();
+    alert(area);
+    alert(parameter);
+    var canvas = document.getElementById("DemoCanvas");
+    if (canvas.getContext)
+    {
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle='#fa4b2a';    // color of fill
+        ctx.fillRect(20, 20, x, y); // create rectangle
+    }
+</script>
+</body>
+</html>
